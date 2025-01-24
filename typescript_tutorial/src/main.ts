@@ -66,3 +66,5 @@ interface UserInterface {
     name: string;
     surname: string;
 }
+
+const PopularTags: PopularTag[] = ['dragon', 'coffe']
