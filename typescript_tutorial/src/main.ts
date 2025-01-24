@@ -68,3 +68,19 @@ interface UserInterface {
 }
 
 const PopularTags: PopularTag[] = ['dragon', 'coffe']
+
+//Unions + type alliases
+
+type MaybePopularTag = PopularTag | null
+
+const dragonsTag: MaybePopularTag = 'dragon';
+
+//Any/Void/Never/Unknown
+
+//Void
+
+const doSomething = (): void => {
+    console.log('doSomething');
+};
+
+//Any

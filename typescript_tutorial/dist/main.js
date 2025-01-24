@@ -37,3 +37,10 @@ var username = 'alex';
 var pageName = '1';
 var errorMessage = null;
 var PopularTags = ['dragon', 'coffe'];
+var dragonsTag = 'dragon';
+//Any/Void/Never/Unknown
+//Void
+var doSomething = function () {
+    console.log('doSomething');
+};
+//Any
