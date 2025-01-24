@@ -7,18 +7,32 @@ var getFullName = function (name, surname) {
     return name + " " + surname;
 };
 console.log(getFullName('Moster', 'Lessons'));
-var user = {
+// Interfaces
+/*interface UserInterface {
+    name: string;
+    age?: number;
+    getMessage(): string
+}
+
+const user: UserInterface = {
     name: 'Monster',
     age: 30,
-    getMessage: function () {
+    getMessage() {
         return 'hello' + name;
     },
 };
-/*const user2: User = {
+
+const user2: UserInterface = {
     name: "Phil"
-}*/
-/*const user: {name: string; age: number} = {
+}
+
+
+const user: {name: string; age: number} = {
     name: 'Nyakallo',
     age: 11,
 };*/
 // Types and Unions
+// Union Operator
+var username = 'alex';
+var pageName = '1';
+var errorMessage = null;

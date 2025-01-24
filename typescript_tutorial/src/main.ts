@@ -16,7 +16,9 @@ console.log(getFullName('Moster', 'Lessons'))
 
 // Interfaces
 
-interface UserInterface {
+
+
+/*interface UserInterface {
     name: string;
     age?: number;
     getMessage(): string
@@ -30,15 +32,37 @@ const user: UserInterface = {
     },
 };
 
-/*const user2: User = {
+const user2: UserInterface = {
     name: "Phil"
-}*/
+}
 
 
-/*const user: {name: string; age: number} = {
+const user: {name: string; age: number} = {
     name: 'Nyakallo',
     age: 11,
 };*/
 
 // Types and Unions
 
+// Union Operator
+
+
+
+let username: string = 'alex';
+
+let pageName: string | number = '1';
+
+let errorMessage: string | null = null;
+
+//let user3: UserInterface | null = null;
+
+ //Type Alliases in typescript
+
+type ID = string;
+type PopularTag = string;
+
+interface UserInterface {
+    id: ID;
+    name: string;
+    surname: string;
+}
