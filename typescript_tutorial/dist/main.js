@@ -44,3 +44,25 @@ var doSomething = function () {
     console.log('doSomething');
 };
 //Any
+var foo = 'foo';
+console.log(foo.bar());
+//Never
+var playSomething = function () {
+    throw 'never';
+};
+//Unknown
+var vAny = 10;
+var vUnknown = 10;
+var s1 = vAny;
+//let s2: string = vUnknown;
+//Type Assertion 
+var s2 = vUnknown;
+var pageNumber = '1';
+var numericPageNumber = pageNumber;
+//Working with the Dom
+//working with input data
+/*const someElement = document.querySelector('.foo') as HTMLInputElement;
+
+console.log('someElement', someElement.value);*/
+//adding listerners
+var someElement = document.querySelector('.foo');

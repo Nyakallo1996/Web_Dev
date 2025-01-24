@@ -84,3 +84,38 @@ const doSomething = (): void => {
 };
 
 //Any
+
+let foo: any = 'foo';
+console.log(foo.bar());
+
+//Never
+
+const playSomething = (): never => {
+    throw 'never';
+};
+
+//Unknown
+
+let vAny: any = 10;
+let vUnknown: unknown = 10;
+
+let s1: string = vAny;
+//let s2: string = vUnknown;
+
+//Type Assertion 
+
+let s2: string =vUnknown as string;
+
+let pageNumber: String = '1';
+let numericPageNumber: number = (pageNumber as unknown) as number;
+
+//Working with the Dom
+//working with input data
+/*const someElement = document.querySelector('.foo') as HTMLInputElement;
+
+console.log('someElement', someElement.value);*/
+
+//adding listerners
+
+const someElement = document.querySelector('.foo');
+
