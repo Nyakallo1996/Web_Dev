@@ -120,13 +120,26 @@ var addId = function (obj) {
 var user = {
     name: "jack",
     data: {
-        meta: 'foo',
-    }
+        meta: "foo",
+    },
 };
 var user2 = {
-    name: 'John',
-    data: ['foo', 'bar', 'baz']
+    name: "John",
+    data: ["foo", "bar", "baz"],
 };
-var result = addId(user);
-console.log("result", result);
+//const result = addId<UserInterface>(user);
+//console.log("result", result);
 //Enums
+var statuses = {
+    notStarted: 0,
+    inProgress: 1,
+    done: 2,
+};
+console.log(statuses.inProgress);
+var Status;
+(function (Status) {
+    Status[Status["notStarted"] = 0] = "notStarted";
+    Status[Status["InProgress"] = 1] = "InProgress";
+    Status[Status["Done"] = 2] = "Done";
+})(Status || (Status = {}));
+console.log(Status.InProgress);

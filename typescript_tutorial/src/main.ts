@@ -155,19 +155,35 @@ interface UserInterface<T> {
   data: T;
 }
 
-const user: UserInterface<{meta: string}> = {
+const user: UserInterface<{ meta: string }> = {
   name: "jack",
   data: {
-    meta: 'foo',
-  }
+    meta: "foo",
+  },
 };
 
 const user2: UserInterface<string[]> = {
-    name: 'John',
-    data: ['foo', 'bar', 'baz']
-}
+  name: "John",
+  data: ["foo", "bar", "baz"],
+};
 
-const result = addId<UserInterface>(user);
-console.log("result", result);
+//const result = addId<UserInterface>(user);
+//console.log("result", result);
 
 //Enums
+
+const statuses = {
+  notStarted: 0,
+  inProgress: 1,
+  done: 2,
+};
+
+console.log(statuses.inProgress);
+
+enum Status {
+    notStarted,
+    InProgress,
+    Done
+}
+
+console.log(Status.InProgress)
