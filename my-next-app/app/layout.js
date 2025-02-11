@@ -30,7 +30,7 @@ export default function RootLayout({ children }) {
                 <Link href="/about/contact">Contact</Link>
               </li>
               <li>
-                <Link href="/github-users">GitHub Users</Link>
+                <Link href="/githubusers">GitHub Users</Link>
               </li>
             </ul>
           </div>
