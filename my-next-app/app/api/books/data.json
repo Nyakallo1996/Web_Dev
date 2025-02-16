@@ -1,0 +1,18 @@
+[
+  {
+    "id": 1,
+    "title": "MERN Stack",
+    "Author": "Greg Lim"
+    
+  },
+  {
+    "id": 2,
+    "title": "Beginning GraphQL",
+    "Author": "Greg Lim"
+  },
+  {
+    "id": 3,
+    "title": "Beginning React Hooks",
+     "Author": "Greg Lim"
+  }
+]
