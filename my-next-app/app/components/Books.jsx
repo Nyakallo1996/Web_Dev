@@ -1,4 +1,7 @@
+"use client";
+import { useState, useEffect } from "react";
 import Link from "next/link";
+import LoadingPage from "../loading";
 
 async function getBooks() {
   const res = await fetch("http://localhost:3000/api/books");
@@ -6,7 +9,18 @@ async function getBooks() {
   return json;
 }
 const Books = async () => {
-  const books = await getBooks();
+  const [books, setBooks] = useState([]);
+  const [loading, setLoading] = useState(true);
+  useEffect(() => {
+    getBooks().then((books) => {
+      setBooks(books);
+      setLoading(false);
+    });
+  }, []);
+  if (loading) {
+    return <LoadingPage />;
+  }
+
   return (
     <div>
       {books.map((book) => (
