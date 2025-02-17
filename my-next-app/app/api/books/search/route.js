@@ -10,3 +10,4 @@ return book.title.toLowerCase().includes(query.toLowerCase());
   console.log(searchParams);
   return NextResponse.json(filteredBooks);
 }
+
