@@ -13,5 +13,6 @@ datasource db {
 model Book{
   id String @id @default(uuid())
   title String
-  Author String
+  link String
+  img String
 }
